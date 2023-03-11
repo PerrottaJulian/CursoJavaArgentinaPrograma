@@ -24,10 +24,6 @@ public class Main {
         double n3 = scanner.nextDouble();
 
         Sort3(n1,n2,n3,a_d.charAt(0));
-
-
-
-
     }
 
     public static void Sort3 (double n1, double n2, double n3, char a_d) {
