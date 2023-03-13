@@ -1,21 +1,12 @@
 public class Producto {
-    public Producto (String marca, double precio, double pesokg){
-        this.marca = marca;
-        this.precio = precio;
-        this.pesokg = pesokg;
+    public Producto (String nombre_marca, double precio_u){
+        this.nombre_marca = nombre_marca;
+        this.precio_u = precio_u;
     }
-
-    private String marca;
-    private double precio;
-    private double pesokg;
-
-    public String Marca(){
-        return marca;
+    private String nombre_marca;
+    private double precio_u;
+    public String Nombre(){
+        return nombre_marca;
     }
-    public double Precio(){
-        return precio;
-    }
-    public double Peso(){
-        return pesokg;
-    }
+    public double Precio(){return precio_u;}
 }
