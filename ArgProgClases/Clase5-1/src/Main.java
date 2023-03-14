@@ -7,6 +7,7 @@ Descuento, con 2 subclases.
  */
 public class Main {
     public static void main(String[] args) {
+        ArrayList<Producto> productos = new ArrayList<Producto>();
 
         Carrito miCarrito = new Carrito();
 
@@ -26,6 +27,7 @@ public class Main {
                 "huevos La Hueveria",
                 100);
 
+
         AgregarAlCarrito(miCarrito, leche);
         AgregarAlCarrito(miCarrito, yogur);
         AgregarAlCarrito(miCarrito, galletitas);
@@ -37,14 +39,11 @@ public class Main {
     }
     public static void AgregarAlCarrito(Carrito carrito, Producto producto){
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Desea llevar " + producto.Nombre() + "? (responder si/no)");
-        String respuesta = scanner.nextLine();
-        if (respuesta.equals("si")){
-            System.out.println("Cantidad?: ");
-            int cantidad = scanner.nextInt();
-            for (int i=0; i<cantidad; i++){
-                carrito.productos.add(producto);}
-        }
+        System.out.println("Cuanto " + producto.Nombre() + " desea llevar?");
+        int cantidad = scanner.nextInt();
+        for (int i=0; i<cantidad; i++){
+            carrito.carrito.add(producto);}
+
     }
 
 }

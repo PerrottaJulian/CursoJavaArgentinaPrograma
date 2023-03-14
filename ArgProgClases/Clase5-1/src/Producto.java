@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Producto {
     public Producto (String nombre_marca, double precio_u){
         this.nombre_marca = nombre_marca;
@@ -5,6 +7,8 @@ public class Producto {
     }
     private String nombre_marca;
     private double precio_u;
+    public ArrayList<Producto> productos = new ArrayList<Producto>();
+
     public String Nombre(){
         return nombre_marca;
     }
